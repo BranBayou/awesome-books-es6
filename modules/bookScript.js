@@ -1,8 +1,9 @@
-import { BookShelf } from "./bookClass.js";
+import BookShelf from './bookClass.js';
+
 const bookList = document.querySelector('.book-list');
 let bookArray = [];
 
-window.ShowBooks = class ShowBooks {
+export default window.ShowBooks = class ShowBooks {
   static addBooks(title, author) {
     const bookTitle = title;
     const bookAuthor = author;
@@ -24,7 +25,7 @@ window.ShowBooks = class ShowBooks {
             <p>by</p>
             <p>${book.author}</p>
           </div>
-          <button class="remove" onclick="ShowBooks.remove(${i})">Remove</button>
+          <button type="button" class="remove" onclick="ShowBooks.remove(${i})">Remove</button>
         </div> 
       `;
     });
@@ -46,5 +47,4 @@ window.ShowBooks = class ShowBooks {
     localStorage.setItem('Books', JSON.stringify(bookArray));
     ShowBooks.showBook();
   }
-}
-export default ShowBooks;
+};

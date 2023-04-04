@@ -66,6 +66,11 @@ header ul li {
   gap: 0.5rem;
 }
 
+.date-time {
+  text-align: end;
+  font-weight: 700;
+}
+
 main {
   max-width: 50%;
   margin: 0 auto;
