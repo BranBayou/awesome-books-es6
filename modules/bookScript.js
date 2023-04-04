@@ -4,7 +4,7 @@ const bookList = document.querySelector('.book-list');
 let bookArray = [];
 
 export default window.ShowBooks = class ShowBooks {
-  static addBooks(title, author) {
+  static addBooks = (title, author) => {
     const bookTitle = title;
     const bookAuthor = author;
     if (bookTitle !== '' && bookAuthor !== '') {
@@ -14,7 +14,7 @@ export default window.ShowBooks = class ShowBooks {
     }
   }
 
-  static showBook() {
+  static showBook = () => {
     const books = ShowBooks.checkLocalStorage();
     let showBook = '';
     books.forEach((book, i) => {
@@ -32,7 +32,7 @@ export default window.ShowBooks = class ShowBooks {
     bookList.innerHTML = showBook;
   }
 
-  static checkLocalStorage() {
+  static checkLocalStorage = () => {
     if (localStorage.getItem('Books') == null) {
       bookArray = [];
     } else {
@@ -41,7 +41,7 @@ export default window.ShowBooks = class ShowBooks {
     return bookArray;
   }
 
-  static remove(selector) {
+  static remove = (selector) => {
     const bookIndex = selector;
     bookArray.splice(bookIndex, 1);
     localStorage.setItem('Books', JSON.stringify(bookArray));
