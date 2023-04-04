@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome books</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <p><a href="#">Awesome books</a></p>
+    <ul>
+      <li><a class="list-link li2" href="#">List</a></li>
+      <li><a class="add-new-link li2" href="#">Add new</a></li>
+      <li><a class="contact-link li2" href="#">Contact</a></li>
+    </ul>
+  </header>
+  <div class="date-time" id="date-time"></div>
+  <section class="content-contianer">
+    <section class="list list-con disapear">
+      <h1>All awesome books</h1>
+      <div class="book-list"></div>
+    </section>
+    <main class="form-con">
+      <form id="form" class="form" action="">
+          <h2>Add a new book</h2>
+          <input class="book-title" type="text" name="title" placeholder="Title" required> 
+          <input class="book-author" type="text" name="author" placeholder="Author" required>
+          <button class="add-btn" id="add-btn" type="button">Add</button>
+      </form>
+    </main>
+    <section class="contact-con contact disapear">
+      <h2>Contact information</h2>
+      <p>Do you have any questions or you just want to say "Hello"?<br>
+      You can reach out to us!</p>
+      <ul class="ul-list">
+              <li>Our e-mail: mail@gmail.com</li>
+              <li>Out phone: 004335865334422</li>
+              <li>Our address: Streetname 22,84503, City, Country</li>
+      </ul>
+    </section>
+  </section>
+  <footer>
+    <p>Copyright...</p>
+  </footer>
+  <script type="module" src="index.js"></script>
+</body>
+</html>

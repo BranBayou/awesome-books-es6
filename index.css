@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 768px;
+  margin: 5px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  height: 8vh;
+  padding: 0 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+header ul li {
+  list-style: none;
+  border-right: 2px solid #000;
+  padding-right: 10px;
+}
+
+.content-contianer {
+  height: 80vh;
+}
+
+.list {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.list h1 {
+  margin: 24px;
+  font-size: 32px;
+}
+
+.ul-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 5rem;
+  gap: 0.5rem;
+}
+
+.date-time {
+  text-align: end;
+  font-weight: 700;
+}
+
+main {
+  max-width: 50%;
+  margin: 0 auto;
+  height: auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact h2 {
+  margin: 24px;
+  font-size: 32px;
+}
+
+#form h2 {
+  margin: 24px;
+  font-size: 32px;
+}
+
+.contact {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+.contact p {
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.add-btn {
+  width: 70px;
+  height: 2rem;
+  box-shadow: 2px 3px 0 black;
+  background-color: #fff;
+  align-self: end;
+  margin-right: 3rem;
+}
+
+.book-list {
+  width: 100%;
+  border: 2px solid #000;
+}
+
+.book-space {
+  display: flex;
+  align-items: center;
+}
+
+.book-space:nth-of-type(odd) {
+  background-color: rgb(185, 180, 180);
+  height: 30px;
+}
+
+.book-space:nth-of-type(even) {
+  background-color: #fff;
+  height: 30px;
+}
+
+.book-des {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.remove {
+  width: auto;
+  height: 20px;
+  margin: 0 10px;
+  box-shadow: 2px 3px 0 black;
+}
+
+.book-title {
+  width: 75%;
+  height: 2rem;
+  border: 2px solid black;
+}
+
+.book-author {
+  width: 75%;
+  height: 2rem;
+  border: 2px solid black;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border: 2px solid #000;
+  height: 8vh;
+  padding: 0 20px;
+}
+
+.disapear {
+  display: none;
+}
